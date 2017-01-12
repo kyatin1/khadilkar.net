@@ -4,13 +4,13 @@ title:  "Activiti Microservices Set-up"
 date:   2017-01-12 15:13:00 -0500
 categories: khadilkar.net update
 ---
-# Activiti Microservices Setup (more details coming soon ...)
+## Activiti Microservices Setup (more details coming soon ...)
 
-## Repositories
+### Repositories
 * Activiti Spring Boot integration service with [REST API](https://github.com/REI-Systems/spring-boot-with-activiti-example)
 * Angular front-end [repo](https://github.com/ykhadilkar-rei/activiti-webapp-angular-demo)
 
-## Setup
+### Setup
 * Run Sprint boot Activiti integration service on port 8081
 * Run Angular UI Node App on port 9000
 * Run separate Tomcat server on 8080. We will run Activiti Designer here. Download Activiti Designer WAR file from [here](https://www.activiti.org/download-links)
