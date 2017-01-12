@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Activiti Microservices Set-up"
+date:   2017-01-12 15:13:00 -0500
+categories: khadilkar.net update
+---
+# Activiti Microservices Setup (more details coming soon ...)
+
+## Repositories
+* Activiti Spring Boot integration service with [REST API](https://github.com/REI-Systems/spring-boot-with-activiti-example)
+* Angular front-end [repo](https://github.com/ykhadilkar-rei/activiti-webapp-angular-demo)
+
+## Setup
+* Run Sprint boot Activiti integration service on port 8081
+* Run Angular UI Node App on port 9000
+* Run separate Tomcat server on 8080. We will run Activiti Designer here. Download Activiti Designer WAR file from [here](https://www.activiti.org/download-links)
+* Run apache HTTPD service on 8082. We will be using HTTPD as reverse proxy. To add proxy, add following 2 lines in httpd.conf file. 
+```
+ProxyPass /service/ http://localhost:8081/ retry=0 timeout=30
+ProxyPass / http://localhost:9000/ retry=0 timeout=30
+```
+* Here is how to add [proxy in Apache](https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension)
+* Once all these servers are running. Application will be available at http://localhost:8082/#/
