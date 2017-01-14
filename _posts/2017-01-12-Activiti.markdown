@@ -21,3 +21,6 @@ ProxyPass / http://localhost:9000/ retry=0 timeout=30
 ```
 * Here is how to add [proxy in Apache](https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension)
 * Once all these servers are running. Application will be available at http://localhost:8082/#/
+
+### Architecture
+![Architecture](https://khadilkar.net/assets/Activiti-setup.png)
