@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Development set-up for Alexa Skill"
+date:   2018-06-12 11:28:00 -0500
+categories: khadilkar.net update
+---
+## Development setup for Alexa skill (more details coming soon ...)
